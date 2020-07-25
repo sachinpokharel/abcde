@@ -144,6 +144,15 @@ blockquote {
 
 /* Hero */
 
+.hero {
+  background-color: #222;
+  background-image: url(../image/back1.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 375px;
+  position: relative;
+}
+
 #home {
 	background-color: #222;
   background-image: url(../image/back1.jpg);
@@ -698,3 +707,7 @@ p {
     margin: 0;
   }
 }
+
+
+
+

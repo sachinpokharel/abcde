@@ -1,4 +1,5 @@
-<?php include 'server.php' ?>
+<!-- <?php include 'server.php' ?>
+<?php include 'header.php'; ?>
 
 
 <?php $results = mysqli_query($db, "SELECT * FROM blog_data"); ?>
@@ -11,3 +12,5 @@
 		<div><?php echo $row['image']; ?></div>		
 	<?php }
 	 ?>
+ -->
+ 

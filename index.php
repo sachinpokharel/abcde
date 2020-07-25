@@ -1,5 +1,4 @@
-<?php 'server.php'; ?>
-
+<?php include 'server.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,10 +14,36 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-<!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
+    <style>
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.color {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
 
   </head>
   <body>    
@@ -50,7 +75,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                  <a  href="blog.php" class="nav-link tm-nav-link" >Blog</a>
+                  <a  href="#product" class="nav-link tm-nav-link" >products</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contact</a>
@@ -59,6 +84,7 @@ https://www.tooplate.com/view/2117-infinite-loop
           </div>        
         </div>
       </nav>
+
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
@@ -206,6 +232,26 @@ https://www.tooplate.com/view/2117-infinite-loop
       </div>
       <div class="tm-bg-overlay"></div>
     </section>
+
+
+    <section id="product" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4"><a href="product.php"><u>Products</u></a></h2>
+              <p class="mx-auto tm-section-desc">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
+              </p>
+          </div>            
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
     
     <section id="gallery" class="tm-section-pad-top">
       <div class="container tm-container-gallery">
@@ -217,18 +263,23 @@ https://www.tooplate.com/view/2117-infinite-loop
               </p>
           </div>            
         </div>
-        <div class="row">5
+        <div class="row">
             <div class="col-12">
                 <div class="mx-auto tm-gallery-container">
                     <div class="grid tm-gallery">
-                      <a href="image/gal1.jpg"  height="473px" width="483px">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="image/gal1.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
+
+
+
+                      <div class="card" style="width:200px height:400px;" >
+                      <img src="image/gal1.jpg" alt="marble paint" style="width:100%" height:200px  class="img-fluid">
+                      <h1>marbles</h1>
+                      <p class="color:">red</p>
+                      <p>Some text about the paint.</p>
+                      <p><button><a href="paint.php">details</a></button></p>
+                    </div>
+
+
+
                       <a href="image/gal2.jpg">
                         <figure class="effect-honey tm-gallery-item">
                           <img src="image/gal2.jpg" alt="Image 2" class="img-fluid">
